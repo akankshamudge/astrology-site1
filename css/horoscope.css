@@ -1,0 +1,273 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 200%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: 50%;
+}
+
+.wrapper1{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 200%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: 100%;
+}
+.wrapper2{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 45%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: 30%;
+    
+}
+.wrapper3{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 45%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: 30%;
+    
+}
+.wrapper4{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 250%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: 70%;
+    bottom: 5%;
+}
+.wrapper5{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 200%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+}
+.wrapper6{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 200%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: -150%;
+}
+.wrapper7{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 200%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: -200%;
+}
+.wrapper8{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: 30%;
+}
+.wrapper10{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 200%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: -200%;
+    bottom: 0%;
+}
+.wrapper11{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(24, 223, 196, 0.8);
+    border-radius: 5px;
+    width: 200%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    left: -150%;
+    bottom: 0%;
+}
+
+
+
+
+.wrapper h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper1 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper2 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper3 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper4 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper5 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper6 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper7 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper8 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper10 h2{
+    margin-top: 0;
+    color: #333;
+}
+.wrapper11 h2{
+    margin-top: 0;
+    color: #333;
+}
+
+
+input[type="submit"]{
+    background-color: #0e344d;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.wrapper .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper1 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper2 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper3 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper4 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper5 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper6 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper7 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper8 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper10 .content{
+    max-height: 30%;
+    overflow: auto;
+}
+.wrapper11 .content{
+    max-height: 30%;
+    overflow: auto;
+}

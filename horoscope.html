@@ -1,44 +1,36 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Astrology Site</title>
-		<link rel="stylesheet" type="text/css" href="horoscope.css">
-		<script type="text/javascript" src="horoscope.js"></script>
-	</head>
-	<body>
-	<div id="container">
-		<div id="header">
-			<h1 class="txtheader">what your horoscope says about you</h1>
-			<div id="img_horo"></div>
-		</div>
-		<div id="selectionarea">
-			<h4 class="txtheader" style="color: rgb(0, 255, 13);">Note: To select next zodiac sign press restart and select</h4>
-			<p><h3 id="txt">Please select your zodiac sign</h3></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-			<select id="horoscope" name="zodiac" onchange="selffunction()">
-				<option  value="default">Please select</option>
-				<option value="Aries">Aries (March 21 - April 19)</option>
-				<option value="Taurus">Taurus (April 20 - May 20)</option>
-				<option value="Gemini">Gemini (May 21 - June 20)</option>
-				<option value="Cancer">Cancer (June 21 - July 22)</option>
-				<option value="Leo">Leo (July 23 - August 22)</option>
-				<option value="Virgo">Virgo (August 23 - September 22)</option>
-				<option value="Libra">Libra (September 23 - October 22)</option>
-				<option value="Scorpio">Scorpio (October 23 - November 21)</option>
-				<option value="Sagittarius">Sagittarius (November 22 - December 21)</option>
-				<option value="Capricor">Capricorn (December 22 - January 19)</option>
-				<option value="Aquarius">Aquarius (January 20 - February 18)</option>
-				<option value="Pisces">Pisces (February 19 - March 20)</option>
-			
-			</select>
-			<input  type="button" value="Restart" name="" onclick="window.location.reload()" id="restartbtn" style="visibility: hidden;">
-	 	</div>
-	 	<br>
-	 	<div id="horoscopetxt">
-			<h3 id="textrow1"></h3>
-			<textarea id="textrow2" style="margin:0px;width: 1208px; height: 366px;"  disabled></textarea>
-	 	</div>
-	 	<a href="./index.html" class="previous round">&#8249;</a>
-	</div>
+    <link rel="stylesheet" href="./css/horoscope.css">
+    <title>Horoscope</title>
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <br>
+            <img src="./images/svg/sign1.svg" alt="">
+            <h2>Aries</h2>
+            <p>Element: Fire <br>Quality: Cardinal <br>Color: Red <br>Day: Tuesday <br>Ruler: Mars <br>
+                Greatest Overall Compatibility: Libra, Leo <br> Lucky Numbers: 1, 8, 17 <br>Date range: March 21 - April 19 <br>Strengths: Courageous, determined, confident, enthusiastic, optimistic, honest, passionate <br>Weaknesses: Impatient, moody, short-tempered, impulsive, aggressive <br>Aries likes: Comfortable clothes, taking on leadership roles, physical challenges, individual sports <br>Aries dislikes: Inactivity, delays, work that does not use one's talents.
+            </p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+    </script>
 </body>
 </html>

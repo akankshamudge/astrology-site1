@@ -1,40 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Astrology Site</title>
-		<style>
-			body
-			{
-				background:rgb(101, 86, 230); 
-			}
-			#img
-			{
-				position: absolute;
-				top:20%;
-				left:33%;
-				transform: translate(0%,0%);	
-			}
-			@keyframes nm{
-			from{
-				transform: rotate(0deg);
-			}
-			to{
-				transform: rotate(360deg);
-			}
-			}
-			.txt{
-				font-size: 50px;
-				font-family: 'Times New Roman', Times, serif;
-				top:0%;
-				left:35%;
-				transform: translate(33%,50%);
-				color: yellow;
-
-			}
-		</style>
-	</head>
-<body>
-	<h1 class="txt">Astrology Horoscope</h1>
-	<div id="img"><a href="./horoscope.html"><img src="hs.png"></a></div>	
-</body>
+    <head>
+        <title>Astrology</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="css/horoscope.css">
+    </head>
+    <body>
+        <div class="as_main_wrapper">
+            <section class="as_zodiac_sign_wrapper as_padderTop80 as_padderBottom80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h1 class="as_heading as_heading_center" style="color: darkblue;">choose zodiac sign</h1>
+                                <div class="as_zodiac_inner text-left">
+                                <div class="row as_verticle_center">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                                        <ul class="as_sign_ul">
+                                            <li class="as_sign_box">
+                                                <a href="#divOne" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign1.svg" alt="">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Aries</h5>
+                                                        <p>Mar 21 - Apr 19</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne">
+                                                    <div class="wrapper">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign1.svg" alt="Aries">
+                                                            <h2>Aries</h2>
+                                                            <p style="color: darkblue;">Element: Fire <br>Quality: Cardinal <br>Color: Red <br>Day: Tuesday <br>Ruler: Mars <br>Greatest Overall Compatibility: Libra, Leo <br> Lucky Numbers: 1, 8, 17 <br>Date range: March 21 - April 19 <br>Strengths: Courageous, determined, confident, enthusiastic, optimistic, honest, passionate <br>Weaknesses: Impatient, moody, short-tempered, impulsive, aggressive <br>Aries likes: Comfortable clothes, taking on leadership roles, physical challenges, individual sports <br>Aries dislikes: Inactivity, delays, work that does not use one's talents.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne2" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign2.svg" alt="">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Taurus </h5>
+                                                        <p>Apr 20 - May 20</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne2">
+                                                    <div class="wrapper1">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign2.svg" alt="Taurus">
+                                                            <h2>Taurus</h2>
+                                                            <p style="color: darkblue;">Element: Earth <br>Quality: Fixed <br>Color: Green, Pink <br>Day: Friday, Monday <br>Ruler: Venus <br>Greatest Overall Compatibility: Scorpio, Cancer <br> Lucky Numbers: 2, 6, 9, 12, 24 <br>Date range: April 20 - May 20 <br>Strengths: Reliable, patient, practical, devoted, responsible, stable <br>Weaknesses: Stubborn, possessive, uncompromising <br>Taurus likes: Gardening, cooking, music, romance, high quality clothes, working with hands <br>Taurus dislikes: Sudden changes, complications, insecurity of any kind, synthetic fabrics.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne3" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign3.svg" alt="">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Gemini</h5>
+                                                        <p>May 21 - June 20</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne3">
+                                                    <div class="wrapper2">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign3.svg" alt="Gemini">
+                                                            <h2>Gemini</h2>
+                                                            <p style="color: darkblue;">Element: Air <br>Quality: Mutable <br>Color: Light-Green, Yellow <br>Day: Wednesday <br>Ruler: Mercury <br>Greatest Overall Compatibility: Sagittarius, Aquarius <br> Lucky Numbers: 5, 7, 14, 23 <br>Date range: May 21 - June 20 <br>Strengths: Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas <br>Weaknesses: Nervous, inconsistent, indecisive <br>Gemini likes: Music, books, magazines, chats with nearly anyone, short trips around the town <br>Gemini dislikes: Being alone, being confined, repetition and routine.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne4" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign4.svg" alt="">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Cancer</h5>
+                                                        <p>June 21 - July 22</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne4">
+                                                    <div class="wrapper3">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign4.svg" alt="Cancer">
+                                                            <h2>Cancer</h2>
+                                                            <p style="color: darkblue;">Element: Water <br>Quality: Cardinal <br>Color: White <br>Day: Monday, Thursday <br>Ruler: Moon <br>Greatest Overall Compatibility: Capricorn, Taurus <br> Lucky Numbers: 2, 3, 15, 20 <br>Date range: June 21 - July 22 <br>Strengths: Tenacious, highly imaginative, loyal, emotional, sympathetic, persuasive <br>Weaknesses: Moody, pessimistic, suspicious, manipulative, insecure <br>Cancer likes: Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends <br>Cancer dislikes: Strangers, any criticism of Mom, revealing of personal life.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne5" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign5.svg" alt="">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Leo</h5>
+                                                        <p>July 23 - Aug 22</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne5">
+                                                    <div class="wrapper4">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign5.svg" alt="Leo">
+                                                            <h2>Leo</h2>
+                                                            <p style="color: darkblue;">Element: Fire <br>Quality: Fixed <br>Color: Gold, Yellow, Orange <br>Day: Sunday <br>Ruler: Sun <br>Greatest Overall Compatibility: Aquarius, Gemini <br> Lucky Numbers: 1, 3, 10, 19 <br>Date range: July 23 - August 22 <br>Strengths: Creative, passionate, generous, warm-hearted, cheerful, humorous <br>Weaknesses: Arrogant, stubborn, self-centered, lazy, inflexible <br>Leo likes: Theater, taking holidays, being admired, expensive things, bright colors, fun with friends <br>Leo dislikes: Being ignored, facing difficult reality, not being treated like a king or queen.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne6" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign6.svg" alt="">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Virgo</h5>
+                                                        <p>Aug 23 - Sept 22</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne6">
+                                                    <div class="wrapper5">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign6.svg" alt="Virgo">
+                                                            <h2>Virgo</h2>
+                                                            <p style="color: darkblue;">Element: Earth <br>Quality: Mutable <br>Color: Grey, Beige, Pale-Yellow <br>Day: Wednesday <br>Ruler: Mercury <br>Greatest Overall Compatibility: Pisces, Cancer <br> Lucky Numbers: 5, 14, 15, 23, 32 <br>Date range: August 23 - September 22 <br>Strengths: Loyal, analytical, kind, hardworking, practical <br>Weaknesses: Shyness, worry, overly critical of self and others, all work and no play <br>Virgo likes: Animals, healthy food, books, nature, cleanliness <br>Virgo dislikes: Rudeness, asking for help, taking center stage.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div class="as_sign_img text-center">
+                                            <img src="images/zodiac.png" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                                        <ul class="as_sign_ul as_sign_ul_right">
+                                            <li class="as_sign_box">
+                                                <a href="#divOne7" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign7.svg" alt="Libra">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Libra</h5>
+                                                        <p>Sept 23 - Oct 22</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne7">
+                                                    <div class="wrapper6">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign7.svg" alt="Libra">
+                                                            <h2>Libra</h2>
+                                                            <p style="color: darkblue;">Element: Air <br>Quality: Cardinal <br>Color: Pink, Green <br>Day: Friday <br>Ruler: Venus <br>Greatest Overall Compatibility: Aries, Sagittarius <br> Lucky Numbers: 4, 6, 13, 15, 24 <br>Date range: September 23 - October 22 <br>Strengths: Cooperative,diplomatic, gracious, fair-minded, social <br>Weaknesses: Indecisive, avoids confrontations, will carry a grudge, self-pity <br>Libra likes: Harmony, gentleness, sharing with others, the outdoors <br>Libra dislikes: Violence, injustice, loudmouths, conformity.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne8" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign8.svg" alt="Scorpio">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Scorpio</h5>
+                                                        <p>Oct 23 - Nov 21</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne8">
+                                                    <div class="wrapper7">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign8.svg" alt="Scorpio">
+                                                            <h2>Scorpio</h2>
+                                                            <p style="color: darkblue;">Element: Water <br>Quality: Fixed <br>Color: Scarlet, Red, Rust <br>Day: Tuesday <br>Ruler: Pluto, Mars <br>Greatest Overall Compatibility: Taurus, Cancer <br> Lucky Numbers: 8, 11, 18, 22 <br>Date range: October 23 - November 21 <br>Strengths: Resourceful, brave, passionate, stubborn, a true friend <br>Weaknesses: Distrusting, jealous, secretive, violent <br>Scorpio likes: Truth, facts, being right, longtime friends, teasing, a grand passion <br>Scorpio dislikes: Dishonesty, revealing secrets, passive people.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne9" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign9.svg" alt="Sagittarius">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Sagittarius</h5>
+                                                        <p>Nov 22 - Dec 21</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne9">
+                                                    <div class="wrapper8">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign9.svg" alt="Sagittarius">
+                                                            <h2>Sagittarius</h2>
+                                                            <p style="color: darkblue;">Element: Fire <br>Quality: Mutable <br>Color: Blue <br>Day: Thursday <br>Ruler: Jupiter <br>Greatest Overall Compatibility: Gemini, Aries <br> Lucky Numbers: 3, 7, 9, 12, 21 <br>Date range: November 22 - December 21 <br>Strengths: Generous, idealistic, great sense of humor <br>Weaknesses: Promises more than can deliver, very impatient, will say anything no matter how undiplomatic <br>Sagittarius likes: Freedom, travel, philosophy, being outdoors <br>Sagittarius dislikes: Clingy people, being constrained, off-the-wall theories, details.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne10" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign10.svg" alt="Capricorn">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Capricorn</h5>
+                                                        <p>Dec 22 - Jan 19</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne10">
+                                                    <div class="wrapper8">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign10.svg" alt="Capricorn">
+                                                            <h2>Capricorn</h2>
+                                                            <p style="color: darkblue;">Element: Earth <br>Quality: Cardinal <br>Color: Brown, Black <br>Day: Saturday <br>Ruler: Saturn <br>Greatest Overall Compatibility: Taurus, Cancer <br> Lucky Numbers: 4, 8, 13, 22 <br>Date range: December 22 - January 19 <br>Strengths: Responsible, disciplined, self-control, good managers <br>Weaknesses: Know-it-all, unforgiving, condescending, expecting the worst <br>Capricorn likes: Family, tradition, music, understated status, quality craftsmanship <br>Capricorn dislikes: Almost everything at some point.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne11" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign11.svg" alt="Aquarius">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Aquarius</h5>
+                                                        <p>Jan 20 - Feb 18</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne11">
+                                                    <div class="wrapper10">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign11.svg" alt="Aquarius">
+                                                            <h2>Aquarius</h2>
+                                                            <p style="color: darkblue;">Element: Air <br>Quality: Fixed <br>Color: Light-Blue, Silver <br>Day: Saturday <br>Ruler: Uranus, Saturn <br>Greatest Overall Compatibility: Leo, Sagittarius <br> Lucky Numbers: 4, 7, 11, 22, 29 <br>Date range: January 20 - February 18 <br>Strengths: Progressive, original, independent, humanitarian <br>Weaknesses: Runs from emotional expression, temperamental, uncompromising, aloof <br>Aquarius likes: Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener <br>Aquarius dislikes: Limitations, broken promises, being lonely, dull or boring situations, people who disagree with them.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="as_sign_box">
+                                                <a href="#divOne12" class="button">
+                                                    <span class="as_sign">
+                                                    <img src="images/svg/sign12.svg" alt="Pisces">
+                                                    </span>
+                                                    <div>
+                                                        <h5>Pisces</h5>
+                                                        <p>Feb 19 - March 20</p>
+                                                    </div>
+                                                </a>
+                                                <div class="overlay" id="divOne12">
+                                                    <div class="wrapper11">
+                                                        <div class="content">
+                                                            <img src="./images/svg/sign12.svg" alt="Pisces">
+                                                            <h2>Pisces</h2>
+                                                            <p style="color: darkblue;">Element: Water <br>Quality: Mutable <br>Color: Mauve, Lilac, Purple, Violet, Sea green <br>Day: Thursday <br>Ruler: Neptune, Jupiter <br>Greatest Overall Compatibility: Virgo, Taurus <br> Lucky Numbers: 3, 9, 12, 15, 18, 24 <br>Date range: February 19 - March 20 <br>Strengths: Compassionate, artistic, intuitive, gentle, wise, musical <br>Weaknesses: Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr <br>Pisces likes: Being alone, sleeping, music, romance, visual media, swimming, spiritual themes <br>Pisces dislikes: Know-it-all, being criticized, the past coming back to haunt, cruelty of any kind.
+                                                            </p>
+                                                            <input type="submit" onclick="history.back()" value="OK">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+        </div>
+        
+        <!-- javascript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugin/slick/slick.min.js"></script>
+        <script src="js/plugin/countto/jquery.countTo.js"></script>
+        <script src="js/plugin/airdatepicker/datepicker.min.js"></script>
+        <script src="js/plugin/airdatepicker/i18n/datepicker.en.js"></script>
+        <script src="js/custom.js"></script>  
+    </body>
 </html>
